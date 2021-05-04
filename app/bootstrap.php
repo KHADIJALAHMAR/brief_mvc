@@ -7,6 +7,9 @@
 
   // Autoload Core Libraries
   spl_autoload_register(function($className){
-    require_once 'libraries/' . $className . '.php';
+    // if (file_exists('../app/libraries/' . $className . '.php')) {
+      require_once '../app/libraries/' . $className . '.php';
+    // }
+    
   });
   
